@@ -16,7 +16,9 @@
       </transition>
     </mainMenu>
     <transition name="leave">
-      <router-view></router-view>
+      <div>
+        <router-view></router-view>
+      </div>
     </transition>
     <maskBg v-if="getPopupCart" @click.native="showPopupCart()" />
   </div>
